@@ -1,21 +1,5 @@
-# Hello world docker action
+# Dupecheck docker action
 
-This action prints "Hello World" or "Hello" + the name of a person to greet to the log.
+This action uses a Linux docker image to check for duplicate filename in the repo which can cause problems when the repo is cloned to Windows file systems.
 
-## Inputs
-
-## `who-to-greet`
-
-**Required** The name of the person to greet. Default `"World"`.
-
-## Outputs
-
-## `time`
-
-The time we greeted you.
-
-## Example usage
-
-uses: actions/hello-world-docker-action@v2
-with:
-  who-to-greet: 'Mona the Octocat'
+uses: kebroderick/dupecheck@v1
